@@ -1,0 +1,15 @@
+[package]
+name = "tiny-linux-usb"
+description = "Lightweight USB host implementation for linux"
+version = "0.1.0"
+edition = "2021"
+
+authors = ["Alex Badics <admin@stickman.hu>"]
+repository = "https://github.com/badicsalex/tiny-linux-usb"
+documentation = "https://docs.rs/tiny-linux-usb"
+keywords = ["usb", "hardware", "bindings"]
+categories = ["hardware-support"]
+license = "MIT"
+
+[dependencies]
+nix = { version = "0.26.2", default-features = false, features = ["ioctl"] }
